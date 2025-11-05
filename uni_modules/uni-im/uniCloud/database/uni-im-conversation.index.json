@@ -1,0 +1,162 @@
+[{
+    "IndexName": "user_id_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+        "Name": "user_id",
+        "Direction": "1"
+      }],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "friend_uid_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+        "Name": "friend_uid",
+        "Direction": "-1"
+      }],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "group_id_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+        "Name": "group_id",
+        "Direction": "-1"
+      }],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "update_time_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+        "Name": "update_time",
+        "Direction": "-1",
+				"Type": "long"
+      }],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "id_1_user_id_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+          "Name": "user_id",
+          "Direction": "-1"
+        },
+        {
+          "Name": "id",
+          "Direction": "-1"
+        }
+      ],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "id_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+        "Name": "id",
+        "Direction": "-1"
+      }],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "leave_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+        "Name": "leave",
+				"Type": "bool",
+        "Direction": "-1"
+      }],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "unread_count_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+        "Name": "unread_count",
+        "Direction": "-1",
+				"Type": "int"
+      }],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "leave_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+        "Name": "leave",
+				"Type": "bool",
+        "Direction": "-1"
+      }],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "loadMoreConversation_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+          "Name": "user_id",
+          "Direction": "-1"
+        },
+        {
+          "Name": "pinned",
+					"Type": "bool",
+          "Direction": "-1"
+        },
+        {
+          "Name": "leave",
+					"Type": "bool",
+          "Direction": "-1"
+        },
+        {
+          "Name": "hidden",
+					"Type": "bool",
+          "Direction": "-1"
+        },
+        {
+          "Name": "update_time",
+          "Direction": "-1",
+					"Type": "long"
+        }
+      ],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "loadMoreConversation_2",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [{
+          "Name": "user_id",
+          "Direction": "-1"
+        },
+        {
+          "Name": "pinned",
+					"Type": "bool",
+          "Direction": "-1"
+        },
+        {
+          "Name": "leave",
+					"Type": "bool",
+          "Direction": "-1"
+        },
+        {
+          "Name": "hidden",
+					"Type": "bool",
+          "Direction": "-1"
+        },
+        {
+          "Name": "last_msg_create_time",
+          "Direction": "-1",
+					"Type": "long"
+        }
+      ],
+      "MgoIsUnique": false
+    }
+  }
+]

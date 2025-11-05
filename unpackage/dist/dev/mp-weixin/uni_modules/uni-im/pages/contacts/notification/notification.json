@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-icons": "../../../../uni-icons/components/uni-icons/uni-icons",
+    "uni-im-info-card": "../../../components/uni-im-info-card/uni-im-info-card",
+    "uni-im-load-state": "../../../components/uni-im-load-state/uni-im-load-state",
+    "uni-list-item": "../../../../uni-list/components/uni-list-item/uni-list-item",
+    "uni-list": "../../../../uni-list/components/uni-list/uni-list"
+  }
+}

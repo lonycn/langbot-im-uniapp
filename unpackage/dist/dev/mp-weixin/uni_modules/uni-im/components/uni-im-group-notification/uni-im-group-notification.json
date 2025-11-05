@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "text-msg": "../uni-im-msg/types/text",
+    "uni-icons": "../../../uni-icons/components/uni-icons/uni-icons"
+  }
+}

@@ -1,0 +1,146 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.uni-im-msg {
+  position: relative;
+  width: 100%;
+}
+.uni-im-msg .msg-box {
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 8px;
+}
+.uni-im-msg .msg-box .msg-main {
+  margin: 0 8px;
+  margin-right: 40px;
+  align-items: flex-start;
+  width: 0;
+  flex-grow: 1;
+  /* 回复引用某条消息提示框 */
+}
+.uni-im-msg .msg-box .msg-main .msg-content-box {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.uni-im-msg .msg-box .msg-main .cite-box {
+  margin: 8px 0;
+  background-color: #e3e3e3;
+  color: #6a6a6a;
+  border-radius: 5px;
+  max-width: 100%;
+  justify-content: center;
+  padding: 5px 10px;
+}
+.uni-im-msg .msg-box .msg-main .cite-box .cite-box-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+.uni-im-msg.self .msg-box {
+  flex-direction: row-reverse;
+}
+.uni-im-msg.self .msg-main {
+  align-items: flex-end;
+  margin-right: 8px;
+  margin-left: 40px;
+}
+.uni-im-msg.self .msg-main .msg-content-box {
+  justify-content: flex-end;
+}
+.uni-im-msg .nickname-box {
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.uni-im-msg .nickname-box .nickname {
+  font-size: 14px;
+  color: #666666;
+  padding-left: 2px;
+}
+.uni-im-msg .nickname-box .real_name {
+  font-size: 12px;
+  color: #999;
+  padding: 0 4px;
+  background-color: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #ddd;
+  margin-left: 3px;
+  position: relative;
+  bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.uni-im-msg .nickname-box .real_name::before {
+  content: "\eab8";
+  color: #fd7e08;
+  font-size: 10px;
+  margin-right: 2px;
+  font-family: uni-im-icons;
+}
+.uni-im-msg .nickname-box .badge {
+  position: relative;
+  bottom: 2px;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: #1ab94d;
+  padding: 1px 3px;
+  border-radius: 2px;
+  transform: scale(0.8);
+}
+.uni-im-msg .nickname-box .badge.grey {
+  background-color: #bbb;
+}
+.uni-im-msg .rich-text {
+  background-color: transparent;
+  width: 500rpx;
+}
+.uni-im-msg .link {
+  color: #007fff;
+}
+.uni-im-msg .msgStateIcon {
+  margin-right: 5px;
+}
+.uni-im-msg .revoke-text-box {
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+}
+.uni-im-msg .revoke-text-box .revoke-text {
+  color: #999;
+  font-size: 12px;
+}
+.uni-im-msg .revoke-text-box .re-edit {
+  color: #0b65ff;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.uni-im-msg .friendlyTime {
+  height: 18px;
+}

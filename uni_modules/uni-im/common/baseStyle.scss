@@ -1,0 +1,46 @@
+/* #ifdef H5 */
+::v-deep {
+/* #endif */
+  #app,
+  page,
+  view,
+  label
+  {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: auto;
+    align-items: stretch;
+    align-content: flex-start;
+  }
+
+  button{
+    margin: 0;
+  }
+
+  page,
+  view,
+  label,
+  swiper-item {
+    flex-direction: column;
+  }
+
+  page,
+  view,
+  image,
+  input,
+  swiper,
+  scroll-view,
+  swiper-item,
+  text,
+  textarea,
+  video {
+    box-sizing: border-box;
+  }
+
+  swiper-item {
+    position: absolute;
+  }
+/* #ifdef H5 */
+}
+/* #endif */

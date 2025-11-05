@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="{{['video-box', g && 'is-float-mode']}}" bindtap="{{h}}"><view wx:if="{{b}}" class="mask"></view><video ref="video" bindtap="{{c}}" src="{{d}}" autoplay="{{true}}" page-gesture="{{true}}" show-mute-btn="{{true}}" show-fullscreen-btn="{{e}}" class="video"></video><cover-view class="close-icon" bindtap="{{f}}">关闭</cover-view></view>

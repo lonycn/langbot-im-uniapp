@@ -1,0 +1,342 @@
+{
+  "pages": [
+    {
+      "path": "pages/chat/chat",
+      "style": {
+        "navigationBarTitleText": "LangBot 会话",
+        "navigationStyle": "default",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    }
+    // #ifndef MP-WEIXIN
+    , {
+      "path": "uni_modules/uni-im/pages/chat/chat",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [{
+              "color": "#333",
+              "colorPressed": "#111111",
+              "float": "right",
+              "text": "...",
+              "fontSize": 26,
+              "onclick": "more"
+            }]
+          }
+        }
+      }
+    }
+    // #endif
+  ],
+  "subPackages": [
+    {
+      "root": "uni_modules/uni-im/pages",
+      "pages": [{
+          "path": "index/index",
+          "style": {
+           "navigationBarTitleText": "会话列表",
+            "enablePullDownRefresh": false,
+            "app-plus": {
+              "titleNView": {
+                "buttons": [{
+                  "color": "#999999",
+                  "colorPressed": "#111111",
+                  "float": "right",
+                  "text": "我的",
+                  "fontSize": 14,
+                  "onclick": "toLogin"
+                }]
+              }
+            }
+          }
+        },{
+          "path": "common/view-code-page/view-code-page",
+          "style": {
+            "navigationBarTitleText": "代码浏览",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "userList/userList",
+          "style": {
+            "navigationBarTitleText": "用户列表",
+            "enablePullDownRefresh": true
+          }
+        },
+        // #ifdef MP-WEIXIN
+        {
+          "path": "chat/chat",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "app-plus": {
+              "titleNView": {
+                "buttons": [{
+                  "color": "#333",
+                  "colorPressed": "#111111",
+                  "float": "right",
+                  "text": "...",
+                  "fontSize": 26,
+                  "onclick": "more"
+                }]
+              }
+            }
+          }
+        },
+        // #endif
+        {
+          "path": "common/video/video",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+
+        },
+        {
+          "path": "group/info",
+          "style": {
+            "navigationBarTitleText": "群信息",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "contacts/notification/notification",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "contacts/contacts",
+          "style": {
+            "navigationBarTitleText": "通讯录",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "contacts/addPeopleGroups/addPeopleGroups",
+          "style": {
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "contacts/createGroup/createGroup",
+          "style": {
+            "navigationBarTitleText": "创建群聊",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "group/qrCode",
+          "style": {
+            "navigationBarTitleText": "群聊二维码",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "contacts/groupList/groupList",
+          "style": {
+            "navigationBarTitleText": "我的群聊",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "chat/info",
+          "style": {
+            "navigationBarTitleText": "聊天设置",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path" : "share-msg/share-msg",
+          "style":{
+            "enablePullDownRefresh": false,
+            "navigationBarTitleText": "选择会话",
+            "app-plus": {
+              "titleNView": {
+                "autoBackButton": false,
+                "buttons": [{
+                  "text": "取消",
+                  "fontSize": 16,
+                  "float": "left"
+                },{
+                  "text": "确定",
+                  "fontSize": 16,
+                  "float": "right",
+                  "color": "#EEE",
+                  "width": "100px"
+                }]
+              }
+            }
+          }
+        },
+        {
+          "path": "group/members",
+          "style": {
+            "navigationBarTitleText": "群成员",
+            "enablePullDownRefresh": false
+          }
+        },
+				{
+					"path" : "group/notice/list",
+					"style" : 
+					{
+						"navigationBarTitleText" : "群公告列表"
+					}
+				},
+				{
+					"path" : "group/notice/edit",
+					"style" : 
+					{
+						"navigationBarTitleText" : "群公告管理"
+					}
+				}
+      ]
+    },
+    {
+      "root": "uni_modules/uni-id-pages/pages",
+      "pages": [{
+          "path": "userinfo/userinfo",
+          "style": {
+            "navigationBarTitleText": "个人资料"
+          }
+        },
+        {
+          "path": "login/login-withoutpwd"
+        },
+        {
+          "path": "login/login-withpwd"
+        },
+        {
+          "path": "userinfo/deactivate/deactivate",
+          "style": {
+            "navigationBarTitleText": "注销账号"
+          }
+        },
+        {
+          "path": "userinfo/bind-mobile/bind-mobile",
+          "style": {
+            "navigationBarTitleText": "绑定手机号码"
+          }
+        },
+        {
+          "path": "login/login-smscode",
+          "style": {
+            "navigationBarTitleText": "手机验证码登录"
+          }
+        },
+        {
+          "path": "register/register",
+          "style": {
+            "navigationBarTitleText": "注册"
+          }
+        },
+        {
+          "path": "retrieve/retrieve",
+          "style": {
+            "navigationBarTitleText": "重置密码"
+          }
+        }, {
+          "path": "common/webview/webview",
+          "style": {
+            "enablePullDownRefresh": false,
+            "navigationBarTitleText": ""
+          }
+        }, {
+          "path": "userinfo/change_pwd/change_pwd",
+          "style": {
+            "enablePullDownRefresh": false,
+            "navigationBarTitleText": "修改密码"
+          }
+        }, {
+          "path": "register/register-by-email",
+          "style": {
+            "navigationBarTitleText": "邮箱验证码注册"
+          }
+        }, {
+          "path": "retrieve/retrieve-by-email",
+          "style": {
+            "navigationBarTitleText": "通过邮箱重置密码"
+          }
+        },
+        {
+          "path": "userinfo/set-pwd/set-pwd",
+          "style": {
+            "enablePullDownRefresh": false,
+            "navigationBarTitleText": "设置密码"
+          }
+        }
+        // #ifdef H5
+        ,
+        {
+          "path": "userinfo/cropImage/cropImage"
+        },
+        {
+          "path": "register/register-admin",
+          "style": {
+            "enablePullDownRefresh": false,
+            "navigationBarTitleText": "注册管理员账号"
+          }
+        }
+        // #endif
+      ]
+    }
+  ],
+  // #ifdef APP
+  "tabBar": {
+  	"color": "#999999",
+  	"selectedColor": "#38BC48",
+  	"borderStyle": "black",
+  	"backgroundColor": "#FFFFFF",
+  	"list": [{
+  			"pagePath": "uni_modules/uni-im/pages/index/index",
+  			"text": "会话",
+  			"iconPath": "uni_modules/uni-im/static/tabbarIcon/chat.png",
+  			"selectedIconPath": "uni_modules/uni-im/static/tabbarIcon/chatex.png"
+  		},
+  		{
+  			"pagePath": "uni_modules/uni-im/pages/userList/userList",
+  			"text": "用户列表",
+  			"iconPath": "uni_modules/uni-im/static/tabbarIcon/contacts.png",
+  			"selectedIconPath": "uni_modules/uni-im/static/tabbarIcon/contactsex.png"
+  		},
+  		{
+  			"pagePath": "uni_modules/uni-im/pages/contacts/contacts",
+  			"text": "通讯录",
+  			"iconPath": "uni_modules/uni-im/static/tabbarIcon/contacts.png",
+  			"selectedIconPath": "uni_modules/uni-im/static/tabbarIcon/contactsex.png"
+  		}
+  	]
+  },
+  // #endif
+  "uniIdRouter": {
+    "loginPage": "uni_modules/uni-id-pages/pages/login/login-withpwd",
+    "needLogin": [
+    	"uni_modules/uni-im/pages/userList/userList",
+    	"uni_modules/uni-im/pages/contacts/contacts"
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-im",
+		// #ifdef H5 
+		"navigationStyle": "custom",
+		// #endif 
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "bounce": "none"
+    }
+  }
+}

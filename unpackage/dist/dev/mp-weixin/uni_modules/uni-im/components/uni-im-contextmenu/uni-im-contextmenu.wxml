@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="root" catchcontextmenu="{{h}}"><view class="uni-im-contextmenu-mark" catchtouchstart="{{b}}" bindtap="{{c}}"></view><view class="contextmenu" ref="contextmenu" style="{{'left:' + e + ';' + ('top:' + f) + ';' + ('opacity:' + g)}}"><text wx:for="{{d}}" wx:for-item="item" wx:key="b" class="item" bindtap="{{item.c}}">{{item.a}}</text></view></view>

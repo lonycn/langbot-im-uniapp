@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "会话列表",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-im-conversation-list": "../../components/uni-im-conversation-list/uni-im-conversation-list"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "选择会话",
+  "usingComponents": {
+    "uni-search-bar": "../../../uni-search-bar/components/uni-search-bar/uni-search-bar",
+    "uni-im-conversation-list": "../../components/uni-im-conversation-list/uni-im-conversation-list",
+    "uni-icons": "../../../uni-icons/components/uni-icons/uni-icons",
+    "uni-list-item": "../../../uni-list/components/uni-list-item/uni-list-item",
+    "uni-im-view-msg": "../../components/uni-im-view-msg/uni-im-view-msg"
+  }
+}

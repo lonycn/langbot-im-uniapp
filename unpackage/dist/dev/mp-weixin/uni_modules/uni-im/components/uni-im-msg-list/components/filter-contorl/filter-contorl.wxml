@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="filter-contorl"><text class="title">已进入话题</text><uni-im-icons wx:if="{{c}}" class="exit" bindclick="{{b}}" u-i="1d798a5c-0" bind:__l="__l" u-p="{{c}}"></uni-im-icons><uni-im-choose-user wx:if="{{e}}" u-i="1d798a5c-1" bind:__l="__l" bindupdateModelValue="{{d}}" u-p="{{e}}"></uni-im-choose-user></view>

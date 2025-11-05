@@ -1,0 +1,284 @@
+ // .tip{
+ //   flex: 1;
+ // }
+page {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  background-color: #2e2e3e;
+  /* #ifdef H5 */
+  @media screen and (min-device-width:960px){
+    height: 100vh;
+    padding: 20px;
+    .pointer {
+      cursor: pointer;
+    }
+  }
+  /* #endif */
+  .uni-im-index {
+    // border: 1px solid #FFF;
+    background-color: #ececec;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    /* #ifdef H5 */
+    @media screen and (min-device-width:960px){
+      border-radius: 20px;
+    }
+    #left-view {
+      .item{
+       cursor: pointer;
+       margin-top: 36px;
+      }
+      .item:hover{
+       box-shadow: 0 0 20px 2px #fefefe;
+       border-radius: 10px;
+      }
+      width:60px;
+      align-items: center;
+      padding-top: 100px;
+      background-color: #ececec;
+      border-radius: 20px 0 0 20px;
+      
+      .uni-link:hover{
+        color: #00aa55 !important;
+      }
+      .download {
+        box-shadow: unset;
+        margin-top: auto;
+        margin-bottom: 60px;
+        .item {
+          box-shadow: unset;
+          margin-top: 25px;
+          padding: 5px;
+          width: 45px;
+          &:hover {
+            box-shadow: 0 0 20px 2px #fefefe;
+          }
+          ::v-deep span {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .icon {
+              font-size: 12px;
+               width: 26px;
+               height: 26px;
+               margin-bottom: 3px;
+            }
+            .title {
+              width: 50px;
+              text-align: center;
+              font-size: 12px;
+              transform: scale(0.8);
+              color: #666;
+            }
+          }
+          &.uni-link--withline {
+            // 去掉下划线
+            text-decoration: unset !important;
+          }
+        }
+      }
+    }
+    #right-view {
+      position: relative;
+      width: 0;
+      flex-grow: 1;
+      background-color: #FFFFFF;
+      #chat-view-box {
+				height: 0;
+        flex-grow: 1;
+        .header {
+          height: 50px;
+          background-color: #FAFAFA;
+          padding:0 20px;
+          flex-direction: row;
+          justify-content: end;
+          align-items: center;
+          .more{
+            cursor: pointer;
+          }
+        }
+        .content {
+					position: relative;
+          flex: 1;
+					height: 0;
+          ::v-deep {
+            #web-pc-chat-title
+            {
+              position: absolute;
+              z-index: 99;
+              top: -35px;
+              left: 15px;
+              flex-direction: row;
+            }
+            .unread_count {
+              display: none;
+            }
+            .msg-list {
+              .uni-im-list {
+                height: 0;
+                flex: 1;
+              }
+            }
+          }
+          .chatInfoBox {
+            z-index: 9;
+            position: absolute;
+            right:0;
+            background-color: rgba(0,0,0,0.2);
+            height: 100%;
+            width: 100%;
+            align-items: flex-end;
+            .group-info-parent{
+              height: 100%;
+              overflow-y: auto;
+							background: #F9F9F9;
+            }
+            .group-info-text {
+              max-width: 250px !important;
+              text-align: left;
+              word-break: break-all;
+            }
+          }
+        }
+      }
+      #ccid-is-null-tip {
+        flex: 1;
+        padding-top: 30vh;
+        align-items: center;
+        background-color: #efefef;
+        .img {
+          width: 130px;
+          margin-bottom: 15px;
+        }
+        .text {
+          color: #999;
+        }
+      }
+      #dynamic-component-box {
+       z-index: 9;
+       width: 100%;
+       height: 100%;
+       background-color: #fff;
+       position: absolute;
+       right: 0;
+       .dynamic-component-title{
+         padding-left: 15px;
+         height: 70px;
+         justify-content: center;
+         border: 1px solid #efefef;
+       }
+       .system-notice-box{
+         width: 100%;
+       }
+       .create-group-box .header-box{
+         width: 100%;
+         .uni-searchbar {
+           width: 100%;
+         }
+       }
+      }
+    }
+    /* #endif */
+    #center-view{
+      position: relative;
+      background-color: #FFF;
+      width: 100%;
+      /* #ifdef H5 */
+      @media screen and (min-device-width:960px){
+        width:300px;
+        background-color: #F9F9F9;
+      }
+      /* #endif */
+      #search-bar-box {
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+        padding:0 10px;
+        background-color: #FCFCFC;
+        #search-bar {
+          flex: 1;
+          padding: 0;
+          ::v-deep .uni-searchbar__box {
+            height: 30px;
+            justify-content: flex-start;
+            .uni-input-placeholder,
+            .uni-searchbar__text-placeholder {
+              color: #CCC;
+              font-size: 12px;
+              padding-left: 0;
+            }
+            .uni-searchbar__box-icon-search {
+              padding: 0 2px 0 8px;
+              top: -1px;
+              .uniui-search:before {
+                font-size: 14px;
+                color: #CCC;
+              }
+            }
+						.uniui-clear:before {
+							font-size: 18px;
+							color: #CCC;
+						}
+          }
+        }
+        .add-icon {
+          margin-left: 10px;
+          width: 28px;
+          height: 28px;
+          display: flex;
+          background-color: #f3f3f3;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+        }
+      }
+      #conversation-list-box {
+        height: 0;
+        flex: 1;
+        /* #ifdef H5 */
+        @media screen and (min-device-width:960px){
+          ::v-deep {
+            .conversation-list-item {
+              margin: 5px;
+            }
+          }
+        }
+        /* #endif */
+      }
+      #uni-im-contacts-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        .contacts-pages ::v-deep {
+          .user-list-box {
+            overflow: auto;
+          }
+          .activeMenu {
+            background-color: #f5f5f5 !important;
+          }
+        }
+      }
+    }  
+  }
+}
+
+.windows {
+  #center-view #conversation-list-box  .conversation-list-item .uni-list-chat__container {
+    padding-right: 10px;
+  }
+} 
+
+.isPWA {
+  uni-page-body {
+    padding: 0;
+    .uni-im-index {
+      border-radius: 0;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+
+.img {
+  width: 400rpx;
+  /* border: 1px solid #aaa; */
+  box-shadow: 0 0px 2px -1px #aaa;
+  border-radius: 5px;
+}

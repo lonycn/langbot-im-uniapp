@@ -1,0 +1,26 @@
+
+.msg-bubble.data-v-d7d1bd91 {
+	max-width: 70%;
+	margin: 8px 0;
+	padding: 12px;
+	border-radius: 14px;
+	font-size: 28rpx;
+	line-height: 1.4;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+.from-me.data-v-d7d1bd91 {
+	align-self: flex-end;
+	background-color: #4b7bec;
+	color: #ffffff;
+	border-bottom-right-radius: 4px;
+}
+.from-bot.data-v-d7d1bd91 {
+	align-self: flex-start;
+	background-color: #f1f2f6;
+	color: #2f3542;
+	border-bottom-left-radius: 4px;
+}
+.msg-text.data-v-d7d1bd91 {
+	font-size: 28rpx;
+}

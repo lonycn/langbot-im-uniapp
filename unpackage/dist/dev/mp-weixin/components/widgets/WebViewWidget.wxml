@@ -1,0 +1,1 @@
+<view class="webview-card data-v-7804833f"><text class="webview-title data-v-7804833f">{{a}}</text><text wx:if="{{b}}" class="webview-desc data-v-7804833f">{{c}}</text><button class="data-v-7804833f" size="mini" type="primary" bindtap="{{d}}">打开网页</button></view>

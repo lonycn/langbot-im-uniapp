@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "代码浏览",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-im-code-view": "../../../components/uni-im-msg/types/code"
+  }
+}

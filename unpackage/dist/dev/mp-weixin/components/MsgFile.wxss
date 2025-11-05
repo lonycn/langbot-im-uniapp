@@ -1,0 +1,53 @@
+
+.file-bubble.data-v-3b210904 {
+	max-width: 80%;
+	margin: 8px 0;
+	display: flex;
+}
+.file-bubble.from-me.data-v-3b210904 {
+	justify-content: flex-end;
+}
+.file-bubble.from-bot.data-v-3b210904 {
+	justify-content: flex-start;
+}
+.file-body.data-v-3b210904 {
+	padding: 18rpx 22rpx;
+	border-radius: 16rpx;
+	background-color: #ffffff;
+	box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+	display: flex;
+	flex-direction: column;
+	gap: 16rpx;
+}
+.from-me .file-body.data-v-3b210904 {
+	background-color: #4b7bec;
+	color: #ffffff;
+}
+.file-info.data-v-3b210904 {
+	display: flex;
+	gap: 16rpx;
+	align-items: center;
+}
+.file-icon.data-v-3b210904 {
+	font-size: 42rpx;
+}
+.file-text.data-v-3b210904 {
+	display: flex;
+	flex-direction: column;
+	gap: 6rpx;
+}
+.file-name.data-v-3b210904 {
+	font-weight: 600;
+	font-size: 28rpx;
+	max-width: 400rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.file-meta.data-v-3b210904 {
+	font-size: 24rpx;
+	opacity: 0.8;
+}
+.file-action.data-v-3b210904 {
+	align-self: flex-start;
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "聊天设置",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-im-info-card": "../../components/uni-im-info-card/uni-im-info-card",
+    "uni-list-item": "../../../uni-list/components/uni-list-item/uni-list-item",
+    "uni-list": "../../../uni-list/components/uni-list/uni-list"
+  }
+}

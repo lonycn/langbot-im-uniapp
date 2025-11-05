@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "群聊二维码",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-im-img": "../../components/uni-im-img/uni-im-img"
+  }
+}

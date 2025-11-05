@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "群公告列表",
+  "usingComponents": {
+    "notice-edit": "./edit",
+    "uni-icons": "../../../../uni-icons/components/uni-icons/uni-icons",
+    "uni-im-msg": "../../../components/uni-im-msg/uni-im-msg",
+    "uni-im-load-state": "../../../components/uni-im-load-state/uni-im-load-state",
+    "unicloud-db": "../../../../../node-modules/@dcloudio/uni-components/lib/unicloud-db/unicloud-db",
+    "uni-fab": "../../../../uni-fab/components/uni-fab/uni-fab",
+    "uni-popup": "../../../../uni-popup/components/uni-popup/uni-popup"
+  }
+}

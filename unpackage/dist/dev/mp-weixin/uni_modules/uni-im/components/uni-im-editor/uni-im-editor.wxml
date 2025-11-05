@@ -1,0 +1,1 @@
+<view class="uni-im-editor-box" bindtap="{{h}}"><block wx:if="{{r0}}"><textarea class="uni-im-editor-mp" bindinput="{{a}}" auto-height maxlength="{{b}}" show-confirm-bar="{{false}}" adjust-position="{{false}}" bindblur="{{c}}" cursor="{{d}}" bindfocus="{{e}}" focus="{{f}}" value="{{g}}"></textarea></block></view>

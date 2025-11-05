@@ -1,0 +1,13 @@
+
+.msg-userinfo-card {
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 250px;
+}
+.avatar {
+  border-radius: 5px;
+  margin-right: 10px;
+}

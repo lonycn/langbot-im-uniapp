@@ -1,0 +1,33 @@
+[
+  {
+    "IndexName": "user_id_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [
+        {
+          "Name": "user_id",
+          "Direction": "1"
+        }
+      ],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "type_muteAllMembers_createTime",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [
+        {
+          "Name": "type",
+          "Direction": "1"
+        },{
+          "Name": "mute_all_members",
+          "Direction": "1"
+        },
+        {
+          "Name": "create_time",
+          "Direction": "-1"
+        }
+      ],
+      "MgoIsUnique": false
+    }
+  }
+]

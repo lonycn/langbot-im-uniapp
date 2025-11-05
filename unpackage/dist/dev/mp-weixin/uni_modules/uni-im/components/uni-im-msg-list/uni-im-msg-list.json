@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-im-list": "./components/uni-im-list/uni-im-list",
+    "filter-contorl": "./components/filter-contorl/filter-contorl",
+    "uni-im-load-state": "../uni-im-load-state/uni-im-load-state",
+    "uni-im-msg": "../uni-im-msg/uni-im-msg",
+    "uni-icons": "../../../uni-icons/components/uni-icons/uni-icons",
+    "uni-im-group-notification": "../uni-im-group-notification/uni-im-group-notification",
+    "uni-popup": "../../../uni-popup/components/uni-popup/uni-popup",
+    "uni-im-group-notice-popup": "../uni-im-group-notice-popup/uni-im-group-notice-popup",
+    "uni-im-view-msg": "../uni-im-view-msg/uni-im-view-msg"
+  }
+}

@@ -1,0 +1,1 @@
+<view class="{{['msg-text-box', d && 'self']}}"><msg-rich-text wx:if="{{a}}" u-i="d35ed980-0" bind:__l="__l" u-p="{{b}}"/><text wx:else class="msg-text" decode="{{true}}" space="ensp">{{c}}</text></view>

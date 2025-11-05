@@ -1,0 +1,1 @@
+<view id="page" class="uni-im-index"><view id="center-view"><uni-im-conversation-list wx:if="{{e}}" class="r" data-c-h="{{!b}}" u-r="uni-im-conversation-list" bindclickItem="{{c}}" bindchange="{{d}}" id="conversation-list-box" u-i="4f527584-0" bind:__l="__l" u-p="{{e}}"></uni-im-conversation-list></view></view>

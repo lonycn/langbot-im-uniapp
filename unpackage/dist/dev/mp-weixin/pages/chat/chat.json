@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "LangBot 会话",
+  "navigationStyle": "default",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "msg-text": "../../components/MsgText",
+    "msg-card": "../../components/MsgCard",
+    "msg-image": "../../components/MsgImage",
+    "msg-audio": "../../components/MsgAudio",
+    "msg-video": "../../components/MsgVideo",
+    "msg-file": "../../components/MsgFile",
+    "msg-widget": "../../components/MsgWidget"
+  }
+}

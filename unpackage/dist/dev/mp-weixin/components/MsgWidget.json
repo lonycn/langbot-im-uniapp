@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "music-player-widget": "./widgets/MusicPlayerWidget",
+    "form-preview-widget": "./widgets/FormPreviewWidget",
+    "web-view-widget": "./widgets/WebViewWidget"
+  }
+}

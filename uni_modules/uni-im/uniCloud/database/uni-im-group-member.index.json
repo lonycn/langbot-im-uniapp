@@ -1,0 +1,14 @@
+[{
+  "IndexName": "user_id_group_id",
+  "MgoKeySchema": {
+    "MgoIndexKeys": [{
+      "Name": "group_id",
+      "Direction": "1"
+    },
+    {
+      "Name": "user_id",
+      "Direction": "1"
+    }],
+    "MgoIsUnique": true
+  }
+}]

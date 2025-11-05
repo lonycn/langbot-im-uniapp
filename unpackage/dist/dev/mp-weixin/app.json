@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/chat/chat",
+    "pages/index/index"
+  ],
+  "subPackages": [
+    {
+      "root": "uni_modules/uni-im/pages",
+      "pages": [
+        "index/index",
+        "common/view-code-page/view-code-page",
+        "userList/userList",
+        "chat/chat",
+        "common/video/video",
+        "group/info",
+        "contacts/notification/notification",
+        "contacts/contacts",
+        "contacts/addPeopleGroups/addPeopleGroups",
+        "contacts/createGroup/createGroup",
+        "group/qrCode",
+        "contacts/groupList/groupList",
+        "chat/info",
+        "share-msg/share-msg",
+        "group/members",
+        "group/notice/list",
+        "group/notice/edit"
+      ]
+    },
+    {
+      "root": "uni_modules/uni-id-pages/pages",
+      "pages": [
+        "userinfo/userinfo",
+        "login/login-withoutpwd",
+        "login/login-withpwd",
+        "userinfo/deactivate/deactivate",
+        "userinfo/bind-mobile/bind-mobile",
+        "login/login-smscode",
+        "register/register",
+        "retrieve/retrieve",
+        "common/webview/webview",
+        "userinfo/change_pwd/change_pwd",
+        "register/register-by-email",
+        "retrieve/retrieve-by-email",
+        "userinfo/set-pwd/set-pwd"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-im",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

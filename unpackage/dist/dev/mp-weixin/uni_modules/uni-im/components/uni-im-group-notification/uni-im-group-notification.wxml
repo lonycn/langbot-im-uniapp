@@ -1,0 +1,1 @@
+<view class="system-msg-box"><view class="system-msg group-notification"><view class="title-box"><uni-icons wx:if="{{a}}" u-i="4e92003e-0" bind:__l="__l" u-p="{{a}}"></uni-icons><text class="title">群公告</text></view><text-msg wx:if="{{b}}" u-i="4e92003e-1" bind:__l="__l" u-p="{{b}}"></text-msg><text class="create_time">公告时间：{{c}}</text></view></view>

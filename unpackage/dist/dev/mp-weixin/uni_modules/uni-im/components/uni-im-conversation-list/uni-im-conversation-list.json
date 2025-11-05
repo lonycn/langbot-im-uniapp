@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-icons": "../../../uni-icons/components/uni-icons/uni-icons",
+    "uni-im-conversation": "../uni-im-conversation/uni-im-conversation",
+    "uni-im-load-state": "../uni-im-load-state/uni-im-load-state",
+    "uni-im-contextmenu": "../uni-im-contextmenu/uni-im-contextmenu"
+  }
+}

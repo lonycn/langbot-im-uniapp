@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "msg-popup-control": "../../components/uni-im-msg/popup-control",
+    "toolbar": "./toolbar",
+    "uni-im-msg-list": "../../components/uni-im-msg-list/uni-im-msg-list",
+    "uni-icons": "../../../uni-icons/components/uni-icons/uni-icons",
+    "uni-im-chat-input": "../../components/uni-im-chat-input/uni-im-chat-input",
+    "uni-im-member-list": "../../components/uni-im-member-list/uni-im-member-list"
+  }
+}

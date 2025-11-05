@@ -1,0 +1,1 @@
+<uni-im-info-card wx:if="{{d}}" u-s="{{['left','avatar-overlay-list']}}" id="{{b}}" bindclick="{{c}}" u-i="0280435c-0" bind:__l="__l" u-p="{{d}}"><view slot="left"><slot name="left"></slot></view><view slot="avatar-overlay-list"><block wx:for="{{a}}" wx:for-item="overlay" wx:key="a"></block></view></uni-im-info-card>

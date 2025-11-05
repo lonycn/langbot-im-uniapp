@@ -1,0 +1,61 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"description": "群公告表",
+	"bsonType": "object",
+	"required": ["group_id", "content"],
+	"permission": {
+		"read": true, // 触发器内再处理
+		"create": true, // 触发器内再处理
+		"update": true, // 触发器内再处理
+		"delete": true // 触发器内再处理
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"group_id": {
+			"description": "群ID",
+			"bsonType": "string"
+		},
+		"user_id": {
+			"description": "最后一次编辑此公告的用户id",
+			"bsonType": "string",
+			"forceDefaultValue": {
+				"$env": "uid"
+			}
+		},
+		"content": {
+			"description": "公告内容",
+			"bsonType": "object"
+		},
+		"create_time": {
+			"description": "创建时间",
+			"bsonType": "timestamp",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		},
+		"update_time": {
+			"description": "更新时间",
+			"bsonType": "timestamp",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		},
+		"read_count": {
+			"description": "阅读次数",
+			"bsonType": "int",
+			"forceDefaultValue": 0
+		},
+		"need_confirm": {
+			"description": "是否需要确认",
+			"bsonType": "bool",
+			"defaultValue": false
+		},
+		"confirm_count": {
+			"description": "确认人数",
+			"bsonType": "int",
+			"forceDefaultValue": 0
+		}
+	}
+}

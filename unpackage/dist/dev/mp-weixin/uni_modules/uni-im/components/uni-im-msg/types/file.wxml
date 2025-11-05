@@ -1,0 +1,1 @@
+<view class="msg-content file-msg-box" bindtap="{{g}}" ref="msg-content"><view class="{{['file-msg-info', e && 'downloading']}}"><view wx:if="{{a}}" class="progress"> 下载中：{{b}}% </view><text class="name">{{c}}</text><text class="size">{{d}}</text></view><uni-im-icons wx:if="{{f}}" class="file-icon" u-i="b368f7e2-0" bind:__l="__l" u-p="{{f}}"/></view>

@@ -1,0 +1,1 @@
+<view class="uni-im-load-state"><uni-icons wx:if="{{a}}" class="refresh-icon" u-i="33be7fe0-0" bind:__l="__l" u-p="{{b}}"></uni-icons><text class="refresh-text">{{c}}</text></view>

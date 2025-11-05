@@ -1,0 +1,1 @@
+<view class="encryption-tip"> 此消息为加密消息{{a}}，无法查看 </view>

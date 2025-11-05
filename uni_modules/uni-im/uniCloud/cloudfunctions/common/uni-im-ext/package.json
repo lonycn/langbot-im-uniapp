@@ -1,0 +1,19 @@
+{
+    "name": "uni-im-ext",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "uni-im-ext-msg-reader": "file:..\/..\/..\/..\/..\/uni-im-msg-reader\/uniCloud\/cloudfunctions\/common\/uni-im-ext-msg-reader"
+    },
+    "cloudfunction-config": {
+        "runtime": "Nodejs12"
+    },
+    "origin-plugin-dev-name": "uni-im",
+    "origin-plugin-version": "3.4.54",
+    "plugin-dev-name": "uni-im",
+    "plugin-version": "3.4.54"
+}

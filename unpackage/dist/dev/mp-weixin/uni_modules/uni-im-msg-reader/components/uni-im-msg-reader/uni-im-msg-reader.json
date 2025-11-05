@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-segmented-control": "../../../uni-segmented-control/components/uni-segmented-control/uni-segmented-control",
+    "cloud-image": "../../../uni-id-pages/components/cloud-image/cloud-image"
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "uni-im-co",
+    "dependencies": {
+        "uni-cloud-s2s": "file:..\/..\/..\/..\/uni-cloud-s2s\/uniCloud\/cloudfunctions\/common\/uni-cloud-s2s",
+        "uni-config-center": "file:..\/..\/..\/..\/uni-config-center\/uniCloud\/cloudfunctions\/common\/uni-config-center",
+        "uni-id-common": "file:..\/..\/..\/..\/uni-id-common\/uniCloud\/cloudfunctions\/common\/uni-id-common",
+        "uni-im-ext": "file:..\/common\/uni-im-ext",
+        "uni-im-utils": "file:..\/common\/uni-im-utils"
+    },
+    "extensions": {
+        "uni-cloud-jql": {},
+        "uni-cloud-push": {}
+    },
+    "version": "1.0.0",
+    "main": "index.obj.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "cloudfunction-config": {
+        "path": "\/uni-im-co",
+        "runtime": "Nodejs12"
+    },
+    "origin-plugin-dev-name": "uni-im",
+    "origin-plugin-version": "3.4.54",
+    "plugin-dev-name": "uni-im",
+    "plugin-version": "3.4.54"
+}

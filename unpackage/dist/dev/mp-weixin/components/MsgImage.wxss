@@ -1,0 +1,17 @@
+
+.image-wrapper.data-v-2dc38275 {
+	margin: 8px 0;
+	max-width: 70%;
+}
+.image-wrapper.from-me.data-v-2dc38275 {
+	align-self: flex-end;
+}
+.image-wrapper.from-bot.data-v-2dc38275 {
+	align-self: flex-start;
+}
+.image.data-v-2dc38275 {
+	width: 240rpx;
+	height: 240rpx;
+	border-radius: 12rpx;
+	background-color: #f2f2f2;
+}

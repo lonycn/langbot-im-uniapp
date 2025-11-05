@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-im-icons": "../../uni-im-icons/uni-im-icons",
+    "uni-im-img": "../../uni-im-img/uni-im-img",
+    "uni-link": "../../../../uni-link/components/uni-link/uni-link"
+  }
+}

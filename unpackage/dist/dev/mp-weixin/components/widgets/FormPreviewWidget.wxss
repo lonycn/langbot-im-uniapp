@@ -1,0 +1,35 @@
+
+.form-card.data-v-1f174388 {
+	display: flex;
+	flex-direction: column;
+	gap: 16rpx;
+}
+.form-title.data-v-1f174388 {
+	font-weight: 600;
+	font-size: 30rpx;
+}
+.form-field-list.data-v-1f174388 {
+	display: flex;
+	flex-direction: column;
+	gap: 12rpx;
+}
+.form-field.data-v-1f174388 {
+	background-color: rgba(0, 0, 0, 0.04);
+	border-radius: 12rpx;
+	padding: 12rpx 16rpx;
+	display: flex;
+	flex-direction: column;
+	gap: 6rpx;
+}
+.field-label.data-v-1f174388 {
+	font-size: 26rpx;
+	font-weight: 500;
+}
+.field-value.data-v-1f174388 {
+	font-size: 24rpx;
+	opacity: 0.75;
+}
+.form-actions.data-v-1f174388 {
+	display: flex;
+	gap: 12rpx;
+}

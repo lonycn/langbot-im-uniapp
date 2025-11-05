@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "usingComponents": {
+    "msg-by-type_msg-user-card": "./types/userinfo-card",
+    "msg-by-type_msg-video": "./types/video",
+    "msg-by-type_msg-file": "./types/file",
+    "msg-by-type_msg-history": "./types/history",
+    "msg-by-type_msg-rich-text": "./types/rich-text",
+    "msg-by-type_msg-code": "./types/code",
+    "msg-by-type_msg-text": "./types/text",
+    "msg-by-type_msg-sound": "./types/sound",
+    "msg-by-type_msg-image": "./types/image"
+  }
+}

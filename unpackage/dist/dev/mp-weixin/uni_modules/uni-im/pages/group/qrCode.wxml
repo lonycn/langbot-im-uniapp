@@ -1,0 +1,1 @@
+<view class="group-QRCode"><view class="qr-code"><view class="code-info"><text class="group-name">{{a}}</text><text class="tip">点击二维码复制链接</text></view><uni-im-img wx:if="{{b}}" class="group-avatar" u-i="91de21b6-0" bind:__l="__l" u-p="{{b}}"></uni-im-img></view></view>

@@ -1,0 +1,1 @@
+<view class="system-msg-box"><block wx:if="{{a}}"><group-notice wx:if="{{b}}" u-i="3b5ddc82-0" bind:__l="__l" u-p="{{c}}"></group-notice><text wx:else class="system-msg">{{d}} {{e}}</text></block></view>

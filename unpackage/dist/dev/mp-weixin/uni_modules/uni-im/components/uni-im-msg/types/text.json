@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "msg-rich-text": "./rich-text"
+  }
+}

@@ -1,0 +1,1 @@
+<view class="code-view"><uni-im-code-view wx:if="{{a}}" u-i="7e55cf5c-0" bind:__l="__l" u-p="{{a}}"></uni-im-code-view></view>

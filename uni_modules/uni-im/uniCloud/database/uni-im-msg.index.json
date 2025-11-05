@@ -1,0 +1,89 @@
+[
+  {
+    "IndexName": "group_id_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [
+        {
+          "Name": "group_id",
+          "Direction": "1"
+        }
+      ],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "conversation_id_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [
+        {
+          "Name": "conversation_id",
+          "Direction": "1"
+        }
+      ],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "conversation_id_1_update_time_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [
+        {
+          "Name": "conversation_id",
+          "Direction": "1"
+        },{
+          "Name": "update_time",
+          "Direction": "1"
+        }
+      ],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "type_1",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [
+        {
+          "Name": "type",
+          "Direction": "1"
+        }
+      ],
+      "MgoIsUnique": false
+    }
+  },
+  {
+    "IndexName": "groupId_type_createTime",
+    "MgoKeySchema": {
+      "MgoIndexKeys": [
+        {
+          "Name": "group_id",
+          "Direction": "1"
+        },
+        {
+          "Name": "type",
+          "Direction": "1"
+        },
+        {
+          "Name": "create_time",
+          "Direction": "1"
+        }
+      ],
+      "MgoIsUnique": false
+    }
+  },
+	{
+	  "IndexName": "to_uid_conversation_id",
+	  "MgoKeySchema": {
+	    "MgoIndexKeys": [
+	      {
+	        "Name": "to_uid",
+	        "Direction": "1"
+	      },
+	      {
+	        "Name": "conversation_id",
+	        "Direction": "1"
+	      }
+	    ],
+	    "MgoIsUnique": false
+	  }
+	}
+]

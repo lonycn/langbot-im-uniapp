@@ -1,0 +1,1 @@
+<view><uni-im-img wx:if="{{b}}" bindclick="{{a}}" class="img" u-i="3fe27bd8-0" bind:__l="__l" u-p="{{b}}"/></view>

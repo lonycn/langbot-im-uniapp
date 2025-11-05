@@ -1,0 +1,1 @@
+<view class="video-box" bindtap="{{c}}"><image class="video-img" mode="aspectFill" src="{{a}}"/><view class="video-box-mark"/><uni-im-icons wx:if="{{b}}" class="play-video-icon" u-i="78a55210-0" bind:__l="__l" u-p="{{b}}"/></view>

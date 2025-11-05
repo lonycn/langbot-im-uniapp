@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-im-img": "../../uni-im-img/uni-im-img"
+  }
+}

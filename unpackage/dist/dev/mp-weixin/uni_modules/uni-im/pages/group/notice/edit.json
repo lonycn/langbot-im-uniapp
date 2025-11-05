@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "群公告管理",
+  "usingComponents": {
+    "uni-im-editor": "../../../components/uni-im-editor/uni-im-editor"
+  }
+}

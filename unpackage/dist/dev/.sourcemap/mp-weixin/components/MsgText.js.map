@@ -1,0 +1,1 @@
+{"version":3,"file":"MsgText.js","sources":["/Users/orange/aicode/langbot/web_client/langbot-im-uniapp/components/MsgText.vue?type=component"],"sourcesContent":["import Component from '/Users/orange/aicode/langbot/web_client/langbot-im-uniapp/components/MsgText.vue'\nwx.createComponent(Component)"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;AACA,GAAG,gBAAgB,SAAS;"}

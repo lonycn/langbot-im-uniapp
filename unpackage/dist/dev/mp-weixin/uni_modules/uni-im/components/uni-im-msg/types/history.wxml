@@ -1,0 +1,1 @@
+<view class="history-msg" bindtap="{{c}}"><view class="title">{{a}}</view><view class="item-text-list"><view wx:for="{{b}}" wx:for-item="item" wx:key="c" class="item-text">{{item.a}}：{{item.b}}</view></view></view>

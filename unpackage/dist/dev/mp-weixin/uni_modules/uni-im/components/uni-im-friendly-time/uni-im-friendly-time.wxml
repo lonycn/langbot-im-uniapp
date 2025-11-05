@@ -1,0 +1,1 @@
+<view class="format-time-text" bindtap="{{d}}"><text class="text">{{a}}</text><text wx:if="{{b}}" class="text detail">({{c}})</text></view>

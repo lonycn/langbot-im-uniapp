@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "msg-extra_-uni-im-msg-reader": "../../../uni-im-msg-reader/components/uni-im-msg-reader/uni-im-msg-reader",
+    "msg-system": "./types/system",
+    "msg-content": "./msg-content",
+    "uni-im-friendly-time": "../uni-im-friendly-time/uni-im-friendly-time",
+    "uni-im-img": "../uni-im-img/uni-im-img",
+    "uni-icons": "../../../uni-icons/components/uni-icons/uni-icons"
+  }
+}

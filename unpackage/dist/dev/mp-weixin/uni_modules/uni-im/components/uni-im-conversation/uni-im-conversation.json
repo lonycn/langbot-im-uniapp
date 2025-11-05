@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-im-info-card": "../uni-im-info-card/uni-im-info-card"
+  }
+}

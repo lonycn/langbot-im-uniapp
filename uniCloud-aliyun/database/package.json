@@ -1,0 +1,11 @@
+{
+    "name": "database",
+    "dependencies": {
+        "uni-im-utils": "file:..\/..\/uni_modules\/uni-im\/uniCloud\/cloudfunctions\/common\/uni-im-utils"
+    },
+    "extensions": {},
+    "origin-plugin-dev-name": "uni-im",
+    "origin-plugin-version": "3.4.54",
+    "plugin-dev-name": "uni-im",
+    "plugin-version": "3.4.54"
+}

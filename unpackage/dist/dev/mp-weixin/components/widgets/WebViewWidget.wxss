@@ -1,0 +1,17 @@
+
+.webview-card.data-v-7804833f {
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 14rpx;
+	padding: 20rpx;
+	display: flex;
+	flex-direction: column;
+	gap: 12rpx;
+}
+.webview-title.data-v-7804833f {
+	font-weight: 600;
+	font-size: 30rpx;
+}
+.webview-desc.data-v-7804833f {
+	font-size: 26rpx;
+	opacity: 0.8;
+}

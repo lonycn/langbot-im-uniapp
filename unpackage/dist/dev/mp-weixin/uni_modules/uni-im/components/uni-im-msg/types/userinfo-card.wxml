@@ -1,0 +1,1 @@
+<view class="msg-userinfo-card" bindtap="{{c}}"><uni-im-img wx:if="{{a}}" class="avatar" u-i="d592e33e-0" bind:__l="__l" u-p="{{a}}"/><text decode="{{true}}" space="ensp" class="msg-text">{{b}}</text></view>

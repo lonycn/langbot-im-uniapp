@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "用户列表",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-im-info-card": "../../components/uni-im-info-card/uni-im-info-card",
+    "uni-list": "../../../uni-list/components/uni-list/uni-list",
+    "uni-im-load-state": "../../components/uni-im-load-state/uni-im-load-state",
+    "unicloud-db": "../../../../node-modules/@dcloudio/uni-components/lib/unicloud-db/unicloud-db"
+  }
+}

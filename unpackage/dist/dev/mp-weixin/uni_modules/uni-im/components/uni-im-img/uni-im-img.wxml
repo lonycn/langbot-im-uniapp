@@ -1,0 +1,1 @@
+<image bindload="{{a}}" src="{{b}}" mode="{{c}}" style="{{'width:' + d + ';' + ('height:' + e) + ';' + ('border-radius:' + f)}}" bindtap="{{g}}"></image>

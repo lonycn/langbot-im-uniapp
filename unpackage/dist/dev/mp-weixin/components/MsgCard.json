@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "msg-audio": "./MsgAudio",
+    "msg-video": "./MsgVideo",
+    "msg-file": "./MsgFile"
+  }
+}

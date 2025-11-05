@@ -1,0 +1,1 @@
+<view class="{{['data-v-2dc38275', 'image-wrapper', c]}}"><image class="image data-v-2dc38275" src="{{a}}" mode="aspectFit" bindtap="{{b}}"></image></view>
