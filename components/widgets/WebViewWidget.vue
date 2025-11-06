@@ -16,6 +16,9 @@
 <script setup>
 import { computed } from 'vue'
 
+
+const WEBVIEW_PAGE_PATH = '/uni_modules/uni-im/pages/common/webview/webview'
+
 const props = defineProps({
         widget: {
                 type: Object,
@@ -48,35 +51,29 @@ function openWebview() {
                 uni.showToast({ title: '链接缺失', icon: 'none' })
                 return
         }
+
         const payload = { url }
         emit('open', { status: 'pending', ...payload })
+
+
         /* #ifdef H5 */
         try {
                 window.open(url, '_blank', 'noopener')
                 emit('open', { status: 'success', ...payload })
+
+                return
+
         } catch (error) {
                 console.warn('[WebViewWidget] window.open failed', error)
                 emit('open', { status: 'failed', error, ...payload })
                 copyUrl(url)
         }
-        return
         /* #endif */
-        const target = `/uni_modules/uni-im/pages/common/webview/webview?url=${encodeURIComponent(url)}&title=${encodeURIComponent(
-                props.widget?.title || ''
+
+        const target = `${WEBVIEW_PAGE_PATH}?url=${encodeURIComponent(url)}&title=${encodeURIComponent(
+                props.widget?.title || hostName.value || ''
         )}`
-        /* #ifdef APP-PLUS */
-        plus.runtime.openURL(
-                url,
-                () => {
-                        emit('open', { status: 'success', ...payload })
-                },
-                (err) => {
-                        console.warn('[WebViewWidget] openURL failed, fallback to in-app webview', err)
-                        openInAppWebview(target, payload)
-                }
-        )
-        return
-        /* #endif */
+
         openInAppWebview(target, payload)
 }
 

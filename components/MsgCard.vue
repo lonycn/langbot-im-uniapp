@@ -168,19 +168,38 @@ function handleAction(action) {
 
 function executeAction(action) {
         if (action.type === 'link' && action.url) {
+                const normalizedUrl = /^https?:\/\//i.test(action.url) ? action.url : `https://${action.url}`
+                const title = action.title || props.card?.title || ''
+
                 /* #ifdef H5 */
-                window.open(action.url, '_blank')
-                /* #endif */
-                /* #ifndef H5 */
-                try {
-                        const target = `/uni_modules/uni-im/pages/common/webview/webview?url=${encodeURIComponent(action.url)}`
-                        uni.navigateTo({ url: target })
-                } catch (error) {
-                        console.warn('[MsgCard] open link failed', error)
-                }
-                /* #endif */
-                emit('action', action)
+                window.open(normalizedUrl, '_blank', 'noopener')
+                emit('action', { ...action, url: normalizedUrl })
                 return
+                /* #endif */
+
+                /* #ifndef H5 */
+                const target = `/uni_modules/uni-im/pages/common/webview/webview?url=${encodeURIComponent(normalizedUrl)}&title=${encodeURIComponent(
+                        title
+                )}`
+                uni.navigateTo({
+                        url: target,
+                        success() {
+                                emit('action', { ...action, url: normalizedUrl })
+                        },
+                        fail(error) {
+                                console.warn('[MsgCard] open link failed', error)
+                                uni.setClipboardData({
+                                        data: normalizedUrl,
+                                        success() {
+                                                uni.showToast({ title: '已复制链接，可手动打开', icon: 'none' })
+                                        }
+                                })
+                                emit('action', { ...action, url: normalizedUrl, status: 'failed' })
+                        }
+                })
+                return
+                /* #endif */
+
         }
 
         if (action.type === 'copy' && action.value) {
