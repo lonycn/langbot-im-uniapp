@@ -254,12 +254,6 @@
             "navigationBarTitleText": "重置密码"
           }
         }, {
-          "path": "common/webview/webview",
-          "style": {
-            "enablePullDownRefresh": false,
-            "navigationBarTitleText": ""
-          }
-        }, {
           "path": "userinfo/change_pwd/change_pwd",
           "style": {
             "enablePullDownRefresh": false,

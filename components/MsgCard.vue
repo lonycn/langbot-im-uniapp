@@ -199,7 +199,6 @@ function executeAction(action) {
                 })
                 return
                 /* #endif */
-
         }
 
         if (action.type === 'copy' && action.value) {
