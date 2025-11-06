@@ -16,6 +16,7 @@
 <script setup>
 import { computed } from 'vue'
 
+
 const WEBVIEW_PAGE_PATH = '/uni_modules/uni-im/pages/common/webview/webview'
 
 const props = defineProps({
@@ -54,11 +55,14 @@ function openWebview() {
         const payload = { url }
         emit('open', { status: 'pending', ...payload })
 
+
         /* #ifdef H5 */
         try {
                 window.open(url, '_blank', 'noopener')
                 emit('open', { status: 'success', ...payload })
+
                 return
+
         } catch (error) {
                 console.warn('[WebViewWidget] window.open failed', error)
                 emit('open', { status: 'failed', error, ...payload })
@@ -69,6 +73,7 @@ function openWebview() {
         const target = `${WEBVIEW_PAGE_PATH}?url=${encodeURIComponent(url)}&title=${encodeURIComponent(
                 props.widget?.title || hostName.value || ''
         )}`
+
         openInAppWebview(target, payload)
 }
 

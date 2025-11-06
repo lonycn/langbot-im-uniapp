@@ -12,7 +12,9 @@ Langbot IM is a uni-app implementation of the open-source **uni-im** chat system
 6. [Deploying to uniCloud](#deploying-to-unicloud)
 7. [Cost overview](#cost-overview)
 8. [Additional resources](#additional-resources)
+
 9. [Resolving merge conflicts](#resolving-merge-conflicts)
+
 
 ## Features
 
@@ -117,3 +119,4 @@ Pull requests may show "This branch has conflicts" when the base branch (for exa
 7. **Refresh the PR:** GitHub will automatically re-run merge checks; confirm the "This branch has no conflicts" message before requesting review.
 
 If the conflict happens on GitHub only, you can also click **Resolve conflicts** in the PR UI, edit the files directly in the browser, and commit the resolution. However, resolving locally gives you full testing control before pushing.
+
