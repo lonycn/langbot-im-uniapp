@@ -64,6 +64,12 @@
             "navigationBarTitleText": "代码浏览",
             "enablePullDownRefresh": false
           }
+        },{
+          "path": "common/webview/webview",
+          "style": {
+            "navigationBarTitleText": "网页",
+            "enablePullDownRefresh": false
+          }
         },
         {
           "path": "userList/userList",
@@ -246,12 +252,6 @@
           "path": "retrieve/retrieve",
           "style": {
             "navigationBarTitleText": "重置密码"
-          }
-        }, {
-          "path": "common/webview/webview",
-          "style": {
-            "enablePullDownRefresh": false,
-            "navigationBarTitleText": ""
           }
         }, {
           "path": "userinfo/change_pwd/change_pwd",
