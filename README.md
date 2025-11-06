@@ -12,6 +12,7 @@ Langbot IM is a uni-app implementation of the open-source **uni-im** chat system
 6. [Deploying to uniCloud](#deploying-to-unicloud)
 7. [Cost overview](#cost-overview)
 8. [Additional resources](#additional-resources)
+9. [Resolving merge conflicts](#resolving-merge-conflicts)
 
 ## Features
 
@@ -96,3 +97,23 @@ Refer to the [uniCloud pricing guide](https://doc.dcloud.net.cn/uniCloud/price.h
 - **Community group:** [Join via uni-im chat](https://im.dcloud.net.cn/#/?joinGroup=63ef49711d358337456f4d67)
 
 For feedback or feature requests, please open an issue or reach out through the community group.
+
+## Resolving merge conflicts
+
+Pull requests may show "This branch has conflicts" when the base branch (for example, `main`) has moved forward. To get the PR ready for merge:
+
+1. **Update your local base:** `git fetch origin && git checkout main && git pull`.
+2. **Rebase or merge the base branch into your feature branch:**
+   - Rebase (keeps a linear history): `git checkout <your-branch> && git rebase origin/main`.
+   - Merge (preserves the original commits): `git checkout <your-branch> && git merge origin/main`.
+3. **Resolve conflicts locally:** Open each conflicted file, keep the desired changes, and delete the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`). Use `git status` to confirm all conflicts are resolved.
+4. **Verify the project:** Run the relevant unit tests, linters, or build commands to ensure the merged code still works.
+5. **Complete the rebase/merge:**
+   - For a rebase: `git rebase --continue`.
+   - For a merge: `git commit` (Git creates the merge commit after you stage the resolved files).
+6. **Force-push rebased branches or push merge commits:**
+   - Rebased branch: `git push --force-with-lease`.
+   - Merged branch: `git push`.
+7. **Refresh the PR:** GitHub will automatically re-run merge checks; confirm the "This branch has no conflicts" message before requesting review.
+
+If the conflict happens on GitHub only, you can also click **Resolve conflicts** in the PR UI, edit the files directly in the browser, and commit the resolution. However, resolving locally gives you full testing control before pushing.
