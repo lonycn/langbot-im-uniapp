@@ -64,6 +64,12 @@
             "navigationBarTitleText": "代码浏览",
             "enablePullDownRefresh": false
           }
+        },{
+          "path": "common/webview/webview",
+          "style": {
+            "navigationBarTitleText": "网页",
+            "enablePullDownRefresh": false
+          }
         },
         {
           "path": "userList/userList",
